@@ -20,8 +20,8 @@
 		<cfargument name="event">
 		<cfscript>
             arrayAppend(session.messages.notice, "This is an example of a session-scoped message.");
-            event.setValue('greeting', "Hello, World!");
-            myFusebox.do(action = 'simple.main', contentvariable = "bodyContent");
+            event.setValue("greeting", "Hello, World!");
+            myFusebox.do(action = "simple.main", contentvariable = "bodyContent");
 		</cfscript>
 	</cffunction>
 </cfcomponent>
