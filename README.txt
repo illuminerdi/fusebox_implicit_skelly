@@ -1,9 +1,28 @@
-Things to do before running your app for the first time:
+Make sure that #app_root#/fusebox5 points to Fusebox 5.5.1, otherwise you'll get an error message. I recommend setting it up as a mapping.
 
-1. Open config/app.xml and make sure the settings are correct for your environment
-2. Open config/database.xml and make sure your database connection data is set up
-3. Open config/mapping.xml and give absolute system paths to the location of your FB551 and Reactor checkouts
-4. Open config/reactor.xml and (unfortunately) enter in a bunch of data again. *TODO: dynamically generate the reactor.xml in the future!
-5. Create a symlink to your CFIDE into your webroot if you're developing somewhere else than the JRun/CF webroot (and you should be!)
+Let me know if you have any questions.
 
-Navigate to #app_root#/config - you should be good to go!
+== LICENSE:
+
+(The MIT License)
+
+Copyright (c) 2009 Joshua Clingenpeel
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+'Software'), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be
+included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED 'AS IS', WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
