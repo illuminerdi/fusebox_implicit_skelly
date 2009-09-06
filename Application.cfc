@@ -16,7 +16,7 @@
 		FUSEBOX_PARAMETERS.allowImplicitFusebox = true;
 
 		// the rest is taken straight from the traditional fusebox.xml skeleton:
-		FUSEBOX_PARAMETERS.defaultFuseaction = "testing.main";
+		FUSEBOX_PARAMETERS.defaultFuseaction = "simple.main";
 		// you may want to change this to development-full-load mode:
 		FUSEBOX_PARAMETERS.mode = "development-full-load";
 		FUSEBOX_PARAMETERS.conditionalParse = true;
@@ -63,14 +63,6 @@
         <!--- THIS IS IMPORTANT - this tells your app where it is living on a given server. Blank value means you live at the root. --->
         <!--- TODO: get this working automatically, without having to touch it. --->
         <cfset myFusebox.getApplicationData().appPath = "/" />
-
-        <!--- REACTOR! --->
-		<cfset application.Reactor = CreateObject("component", "reactor.reactorFactory").init(expandPath("#myFusebox.getApplicationData().appPath#config/reactor.xml")) />
-
-        <!--- secure ldap invocation --->
-        <cfset application.app_cuid = 'app_cuid' />
-        <cfset application.app_pass = 'app_pass' />
-        <cfset application.LDAP = createObject("component", "model.ldap.LDAP").init(application.app_cuid, application.app_pass) />
 	</cffunction>
 
     <cffunction name="onSessionStart">
