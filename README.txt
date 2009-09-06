@@ -20,6 +20,7 @@ Features:
 Problems:
 * TODO: build in my custom config suite that sets up all datasources, mappings, webservices.
 * TODO: build in Reactor support.
+* TODO: testings!
 
 == REQUIREMENTS:
 

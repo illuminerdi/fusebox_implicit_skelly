@@ -8,8 +8,8 @@
 		<cfargument name="myFusebox" />
 		<cfargument name="event" />
         <cfscript>
-            event.setValue('notices', session.messages.notice);
             if(ArrayLen(session.messages.notice)){
+                event.setValue('notices', session.messages.notice);
                 myFusebox.do( action="layout.notices", contentvariable="noticeContent");
                 session.messages.notice = ArrayNew(1);
             }
