@@ -1,6 +1,47 @@
-Make sure that #app_root#/fusebox5 points to Fusebox 5.5.1, otherwise you'll get an error message. I recommend setting it up as a mapping.
+== skelly
 
-Let me know if you have any questions.
+* http://illuminerdi.com
+* http://www.adobe.com/coldfusion
+* http://www.fusebox.org
+
+== Description:
+
+This ColdFusion application is a modification of the Fusebox 5.5.1 Implicit (no-XML) Skeleton application (core files and skeleton at http://fusebox.org/go/fusebox-downloads/core-files).
+
+I needed some basic built-in functionality that Skeleton just didn't have that I didn't want to recreate every time.
+
+== FEATURES/PROBLEMS:
+
+Features:
+* Global pre- and postfuseactions provided you extend app.cfc in your controllers.
+* A session-based Rails 'flash' emulator. Not so great, but it works rather well.
+* SES URLs - /index.cfm?fa=simple.main becomes /index.cfm/fa/simple.main
+
+Problems:
+* TODO: build in my custom config suite that sets up all datasources, mappings, webservices.
+* TODO: build in Reactor support.
+
+== REQUIREMENTS:
+
+* ColdFusion MX 7+
+* Fusebox 5.5.1
+
+== INSTALL:
+
+Install Fusebox 5.5.1 somewhere.
+
+Clone this repo into your webroot.
+
+If you're running in a subfolder, edit Application.cfc so that the following code points to the relative location of your application:
+myFusebox.getApplicationData().appPath = "/"
+
+Set up a mapping in CF Administrator that points logic path /fusebox5 to your local copy of Fusebox 5.5.1.
+
+Test out the following URLs:
+http://yourhost/index.cfm/fa/simple.main
+http://yourhost/index.cfm/fa/simple.secondary
+
+Let me know if you have any errors.
 
 == LICENSE:
 
