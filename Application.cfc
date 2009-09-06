@@ -28,11 +28,11 @@
 		FUSEBOX_PARAMETERS.errortemplatesPath = "/fusebox5/errortemplates/";
 
 		// HEY THERE! Here we have some extra config I like to use that you can use if you'd like:
-		// FUSEBOX_PARAMETERS.fuseactionVariable = "fa";
-		// FUSEBOX_PARAMETERS.myself = "/index.cfm/#FUSEBOX_PARAMETERS.fuseactionVariable#/";
-		// FUSEBOX_PARAMETERS.queryStringStart = "/";
-		// FUSEBOX_PARAMETERS.queryStringSeparator = "/";
-		// FUSEBOX_PARAMETERS.queryStringEqual = "/";
+		FUSEBOX_PARAMETERS.fuseactionVariable = "fa";
+		FUSEBOX_PARAMETERS.myself = "/index.cfm/#FUSEBOX_PARAMETERS.fuseactionVariable#/";
+		FUSEBOX_PARAMETERS.queryStringStart = "/";
+		FUSEBOX_PARAMETERS.queryStringSeparator = "/";
+		FUSEBOX_PARAMETERS.queryStringEqual = "/";
 
 		// These are all default values that can be overridden:
 		// FUSEBOX_PARAMETERS.fuseactionVariable = "fuseaction";
